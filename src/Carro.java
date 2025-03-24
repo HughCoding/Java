@@ -5,11 +5,10 @@ public class Carro {
 
     private static int contadorMotorista = 0;
 
-    public Carro(String modelo, Motorista motorista, Motor motor) {
+    public Carro(String modelo, Motorista motorista, int motor) {
         this.modelo = modelo;
         this.motorista = motorista;
-        this.motor = motor;
-        contadorMotorista++;
+        this.motor = new Motor(200, "Gasolina");
     }
 
     public String getModelo(){
