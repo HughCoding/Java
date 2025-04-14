@@ -1,0 +1,30 @@
+package com.mycompany.mavenproject1;
+
+public class MontainBike extends Bicicleta {
+    public int alturaBanco;
+    
+    
+    public MontainBike(int startAltura, int startCadencia, int startMarcha, int startVelocidade){
+        super(startCadencia, startMarcha, startVelocidade);
+        this.alturaBanco = startAltura; 
+        
+    }
+    
+    public void setAltura(int novoValor){
+        alturaBanco = novoValor;
+        
+    }
+   
+     @Override
+    public String toString(){
+    return "O banco tem altura: " + this.alturaBanco;
+
+    }
+}
+
+
+
+    
+    
+    
+   

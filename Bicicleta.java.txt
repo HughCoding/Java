@@ -1,0 +1,41 @@
+package com.mycompany.mavenproject1;
+
+public class Bicicleta {
+    public int cadencia;
+    public int marcha;
+    public int velocidade;
+    
+    
+    public Bicicleta(int startCadencia, int startMarcha, int startVelocidade){
+        cadencia = startCadencia;
+        marcha = startMarcha;
+        velocidade = startVelocidade;
+        
+    }
+    
+    public void setCadencia(int novoValor){
+       cadencia = novoValor;
+    }
+    
+    
+    public void setMarcha(int novoValor){
+       marcha = novoValor;
+    }
+    
+    
+    public void setFreio(int decremento){
+       velocidade += decremento;
+    }
+    
+    public void setAceleracao(int incremento){
+       velocidade += incremento;
+    }
+    
+    
+     @Override
+    public String toString(){
+    return "Cadencia: " + this.cadencia + "\nMarcha: " + this.marcha + "\nVelocidade: " + this.velocidade;
+
+    
+    }
+}
